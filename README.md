@@ -3,6 +3,8 @@
 小程序自定义组件
 需要依赖小程序基础库 2.2.1 版本，同时依赖工具的 npm 构建。具体详情可查阅[官方 npm 文档](https://developers.weixin.qq.com/miniprogram/dev/devtools/npm.html)。
 
+## 使用效果
+
 ## 使用方法
 
 1. 安装 navigation-bar：
@@ -53,7 +55,6 @@ npm install --save weapp-navigation-bar
 | show-loading           |Boolean      | false      | 否             | 是否展示加载动画                                    |
 | bg-style               | String      |            | 否             | 可设定导航栏样式，如'background-color: green'       |
 | title-style            | String      |            | 否             | 可设定导航栏标题样式，如'color: black'               |
-| bg-class               | String      |            | 否             | 可设置导航栏样式表                                  |
-| title-class            | String      |            | 否             | 设置导航栏标题样式表                                |
+
 
 **Tip:** navigation-bar 中包含 slot 节点，位置固定于 navigation-bar 的最右侧，用于承载使用者提供的 wxml 结构
