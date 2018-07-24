@@ -1,7 +1,7 @@
 {
-  "name": "weapp-navigation-bar",
+  "name": "miniprogram-navigation-bar",
   "version": "0.0.1",
-  "description": "weapp custom component",
+  "description": "miniprogram custom component",
   "main": "miniprogram_dist/index.js",
   "scripts": {
     "dev": "gulp dev --develop",

@@ -1,5 +1,7 @@
 # navigation-bar
 
+小程序自定义组件
+
 ## 使用方法
 
 1. 安装 navigation-bar：
@@ -12,19 +14,19 @@ npm install --save weapp-navigation-bar
 
 **App.json参数说明**
 
-   | 属性名                         | 类型      | 默认值   | 说明                                    |
-   |-------------------------------|-----------|----------|----------------------------------------|
-   | navigationBarBackgroundColor  | HexColor  | #000000  | 导航栏背景颜色                          |
-   | navigationBarTextStyle        | String    | white    | 导航栏标题、图标颜色，仅支持 black/white  |
-   | navigationBarTitleText        | String    | WeChat   | 导航栏标题文字内容                       |
+| 属性名                         | 类型      | 默认值   | 说明                                    |
+|-------------------------------|-----------|----------|----------------------------------------|
+| navigationBarBackgroundColor  | HexColor  | #000000  | 导航栏背景颜色                          |
+| navigationBarTextStyle        | String    | white    | 导航栏标题、图标颜色，仅支持 black/white  |
+| navigationBarTitleText        | String    | WeChat   | 导航栏标题文字内容                       |
 
-   ``` javascript
-   {
-     "navigationBarBackgroundColor": "#ffffff",
-     "navigationBarTextStyle": "black",
-     "navigationBarTitleText": "微信"
-   } 
-   ```
+``` javascript
+{
+ "navigationBarBackgroundColor": "#ffffff",
+ "navigationBarTextStyle": "black",
+ "navigationBarTitleText": "微信"
+} 
+```
 
 3. 在需要使用 navigation-bar 的页面 page.json 中添加 navigation-bar 自定义组件配置
 
@@ -53,4 +55,4 @@ npm install --save weapp-navigation-bar
 | bg-class               | String      |            | 否             | 可设置导航栏样式表                                  |
 | title-class            | String      |            | 否             | 设置导航栏标题样式表                                |
 
-**Tip: ** navigation-bar 中包含 slot 节点，位置固定于 navigation-bar 的最右侧，用于承载使用者提供的 wxml 结构
+** Tip: ** navigation-bar 中包含 slot 节点，位置固定于 navigation-bar 的最右侧，用于承载使用者提供的 wxml 结构
