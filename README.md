@@ -55,4 +55,4 @@ npm install --save weapp-navigation-bar
 | bg-class               | String      |            | 否             | 可设置导航栏样式表                                  |
 | title-class            | String      |            | 否             | 设置导航栏标题样式表                                |
 
-** Tip: ** navigation-bar 中包含 slot 节点，位置固定于 navigation-bar 的最右侧，用于承载使用者提供的 wxml 结构
+**Tip:** navigation-bar 中包含 slot 节点，位置固定于 navigation-bar 的最右侧，用于承载使用者提供的 wxml 结构
