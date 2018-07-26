@@ -8,7 +8,7 @@
   z-index: 9999;
 }
 .nav-icon {
-  width: 40rpx;
+  width: 25rpx;
   height: 40rpx;
   padding: 25rpx 25rpx;
 }
