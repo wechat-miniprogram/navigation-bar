@@ -12,7 +12,7 @@
 1. 安装 navigation-bar：
 
 ```
-npm install --save weapp-navigation-bar
+npm install --save miniprogram-navigation-bar
 ```
 
 2. 在 App.json 中对 window 进行配置
@@ -38,7 +38,7 @@ npm install --save weapp-navigation-bar
 ```json
 {
   "usingComponents": {
-    "navigation-bar": "weapp-navigation-bar"
+    "navigation-bar": "miniprogram-navigation-bar"
   }
 }
 ```
