@@ -32,7 +32,6 @@ module.exports = {
         output: {
             filename: '[name].js',
             chunkFilename: 'chunk/[chunkhash].chunk.js',
-            path: isDev ? dev : dist,
         },
         target: 'node',
         externals: [nodeExternals()], // ignore node_modules
@@ -66,6 +65,5 @@ module.exports = {
             }
         }
     },
-
     copy: ['./wxml', './wxss', './wxs', './images'],
 };
