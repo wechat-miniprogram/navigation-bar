@@ -1,4 +1,4 @@
-<navigation-bar bindback="onnavback" enable="{{enable}}" show-loading="{{loading}}" title="{{title}}"  title-style="{{titleStyle}}" bg-style="{{bgStyle}}" delta="{{delta}}"><button size="mini">slot</button></navigation-bar>
+<navigation-bar bindback="onnavback" enable="{{enable}}" show-loading="{{loading}}" title="{{title}}"  title-style="{{titleStyle}}" bg-style="{{bgStyle}}" delta="{{delta}}"></navigation-bar>
 
 <view class="button-area">
     <button bindtap="setTitle">点击设置title</button>
