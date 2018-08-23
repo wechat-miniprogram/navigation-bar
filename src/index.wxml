@@ -1,5 +1,5 @@
 <!--pages/navigation-bar/navigation-bar.wxml-->
-<view class="{{bgClass}} _nav" style='padding-top:{{barHeight}}px; {{navBgStyle}} {{bgStyle}}' bindtouchstart='_onTouchStart' bindtouchend='_onTouchEnd'>
+<view class="{{bgClass}} _nav" style='padding-top:{{barHeight}}px; {{navBgStyle}} {{bgStyle}}'>
   <view class="nav-back" bindtap="_onTap">
     <image class="nav-icon" src="{{navIconUrl}}"></image>
   </view>

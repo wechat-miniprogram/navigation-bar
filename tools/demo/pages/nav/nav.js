@@ -1,11 +1,12 @@
 Page({
   data: {
-    enable: false,
+    enable: true,
     loading: false,
     title: '',
     titleStyle: '',
     bgStyle: 'position: fixed',
-    delta: 2
+    delta: 2,
+    textStyle: 'white'
   },
   onLoad() {
   },

@@ -1,4 +1,3 @@
-// pages/navigation-bar/navigation-bar.js
 const _barHeight = wx.getSystemInfoSync().statusBarHeight
 
 Component({
