@@ -56,6 +56,7 @@ Component({
    * 组件的方法列表
    */
   attach() {
+    // eslint-disable-next-line no-console
     console.log(wx.getCurrent)
   },
   methods: {
