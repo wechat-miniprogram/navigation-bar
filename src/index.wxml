@@ -1,4 +1,4 @@
-<!-- padding-top:{{barHeight}}px; background-color: {{navigationBarBackgroundColor}}; -->
+<!--pages/navigation-bar/navigation-bar.wxml-->
 <view class="{{bgClass}} _nav" style='padding-top:{{barHeight}}px; {{navBgStyle}} {{bgStyle}}' bindtouchstart='_onTouchStart' bindtouchend='_onTouchEnd'>
   <view class="nav-back" bindtap="_onTap">
     <image class="nav-icon" src="{{navIconUrl}}"></image>
@@ -7,7 +7,7 @@
     <view wx:if="{{showLoading}}">
       <image class='loading-icon'></image> 
     </view>
-    <text class="{{titleClass}} nav-text" style='{{navTitleStyle}} {{titleStyle}}' >{{title}}</text>
+    <text class="{{titleClass}}" style='{{navTitleStyle}} {{titleStyle}}' >{{title}}</text>
   </view>
   <view class="slot"><slot></slot></view>
 </view>

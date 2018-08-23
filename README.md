@@ -15,25 +15,7 @@
 npm install --save miniprogram-navigation-bar
 ```
 
-2. 在 App.json 中对 window 进行配置
-
-**App.json参数说明**
-
-| 属性名                         | 类型      | 默认值   | 说明                                    |
-|-------------------------------|-----------|----------|----------------------------------------|
-| navigationBarBackgroundColor  | HexColor  | #000000  | 导航栏背景颜色                          |
-| navigationBarTextStyle        | String    | white    | 导航栏标题、图标颜色，仅支持 black/white  |
-| navigationBarTitleText        | String    | WeChat   | 导航栏标题文字内容                       |
-
-``` javascript
-{
- "navigationBarBackgroundColor": "#ffffff",
- "navigationBarTextStyle": "black",
- "navigationBarTitleText": "微信"
-} 
-```
-
-3. 在需要使用 navigation-bar 的页面 page.json 中添加 navigation-bar 自定义组件配置
+2. 在需要使用 navigation-bar 的页面 page.json 中添加 navigation-bar 自定义组件配置
 
 ```json
 {
@@ -42,7 +24,7 @@ npm install --save miniprogram-navigation-bar
   }
 }
 ```
-4. WXML 文件中引用 navigation-bar
+3. WXML 文件中引用 navigation-bar
 
 ``` xml
 <navigation-bar bindnavback="onnavback" enable="{{enable}}" show-loading="{{loading}}" title="{{title}}" ></navigation-bar> 
@@ -57,6 +39,7 @@ npm install --save miniprogram-navigation-bar
 | show-loading           |Boolean      | false      | 否             | 是否展示加载动画                                    |
 | bg-style               | String      |            | 否             | 可设定导航栏样式，如'background-color: green'       |
 | title-style            | String      |            | 否             | 可设定导航栏标题样式，如'color: black'               |
+| text-style            | String      |white            | 否             |设置按钮颜色               |
 
 
 **Tip:** navigation-bar 中包含 slot 节点，位置固定于 navigation-bar 的最右侧，用于承载使用者提供的 wxml 结构

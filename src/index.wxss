@@ -15,7 +15,6 @@
 .loading-icon {
   width: 35rpx;
   height: 35rpx;
-  /* padding: 0rpx 15rpx; */
   animation: loading-animate 1s steps(12, end) infinite;
   content: " ";
   display: inline-block;

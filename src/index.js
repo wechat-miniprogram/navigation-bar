@@ -1,14 +1,5 @@
-const navConf = __wxConfig.global.window
-const _navBgColor = navConf.navigationBarBackgroundColor
-const _navTextStyle = navConf.navigationBarTextStyle
-const _navTitleText = navConf.navigationBarTitleText
+// pages/navigation-bar/navigation-bar.js
 const _barHeight = wx.getSystemInfoSync().statusBarHeight
-
-const _navIconUrl = _navTextStyle === 'white' || _navTextStyle === '' ? './images/nav_icon_white.png' : './images/nav_icon_black.png'
-const _title = _navTitleText === '' ? 'WeChat' : _navTitleText
-const _navBgStyle = _navBgColor === '' ? 'background-color:#000;' : `background-color:${_navBgColor};`
-const _navTitleStyle = _navTextStyle === '' ? 'color: white;' : `color:${_navTextStyle};`
-
 
 Component({
   /**
@@ -23,40 +14,32 @@ Component({
     //  可传入改变navbar样式
     bgStyle: {
       type: String,
-      value: '',
+      value: 'background-color:#000;',
     },
     //  可传入改变navbar title样式
     titleStyle: {
       type: String,
-      value: '',
-      observer: '_changeTitleStyle'
+      value: 'color: white;',
     },
     title: {
       type: String,
-      value: _title,
-      observer: '_changeTitle'
+      value: '微信',
+      observer: '_changeTitle',
     },
     //  可传入改变nav back页面数
     delta: {
       type: Number,
       value: 1
     },
-    //  可传入css类名,设置navbar样式
-    bgClass: {
-      type: String,
-      value: '',
-      observer: '_changeBgClass'
-    },
-    //  可传入css类名，设置navbar title样式
-    titleClass: {
-      type: String,
-      value: '',
-      observer: '_changeTitleClass'
-    },
     //  决定是否显示loading
     showLoading: {
       type: Boolean,
       value: false
+    },
+    textStyle: {
+      type: String,
+      value: 'white',
+      observer: '_changeTextStyle'
     }
   },
 
@@ -65,9 +48,9 @@ Component({
    */
   data: {
     barHeight: _barHeight,
-    navIconUrl: _navIconUrl,
-    navBgStyle: _navBgStyle,
-    navTitleStyle: _navTitleStyle
+    navIconUrl: '/navigation-bar/image/nav_icon_white.png',
+    navTitleStyle: 'color: white;',
+    navBgStyle: 'background-color:#000;',
   },
 
   /**
@@ -81,31 +64,28 @@ Component({
     _changeTitle() {
       if (this.data.title === '') {
         this.setData({
-          title: _title
+          title: '微信'
         })
       }
     },
-    //  bgClass监听函数
-    _changeBgClass() {
-      if (this.data.bgClass === '') {
+    _changeTextStyle() {
+      if (this.data.textStyle === 'black') {
+        wx.setNavigationBarColor({
+          frontColor: '#000000',
+        })
         this.setData({
-          navBgStyle: _navBgStyle
+          navIconUrl: '/navigation-bar/image/nav_icon_black.png',
+          navTitleStyle: 'color: black;',
+          navBgStyle: 'background-color:#fff;',
         })
       } else {
-        this.setData({
-          navBgStyle: ''
+        wx.setNavigationBarColor({
+          frontColor: '#ffffff',
         })
-      }
-    },
-    //  titleClass监听函数
-    _changeTitleClass() {
-      if (this.data.titleClass === '') {
         this.setData({
-          navTitleStyle: _navTitleStyle
-        })
-      } else {
-        this.setData({
-          navTitleStyle: ''
+          navIconUrl: '/navigation-bar/image/nav_icon_white.png',
+          navTitleStyle: 'color: white;',
+          navBgStyle: 'background-color:#000;',
         })
       }
     },
