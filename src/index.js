@@ -47,7 +47,7 @@ Component({
    */
   data: {
     barHeight: _barHeight,
-    navIconUrl: '/navigation-bar/image/nav_icon_white.png',
+    navIconUrl: '/components/images/nav_icon_white.png',
     navTitleStyle: 'color: white;',
     navBgStyle: 'background-color:#000;',
   },
@@ -74,7 +74,7 @@ Component({
           frontColor: '#000000',
         })
         this.setData({
-          navIconUrl: '/navigation-bar/image/nav_icon_black.png',
+          navIconUrl: '/components/images/nav_icon_black.png',
           navTitleStyle: 'color: black;',
           navBgStyle: 'background-color:#fff;',
         })
@@ -83,7 +83,7 @@ Component({
           frontColor: '#ffffff',
         })
         this.setData({
-          navIconUrl: '/navigation-bar/image/nav_icon_white.png',
+          navIconUrl: '/components/images/nav_icon_white.png',
           navTitleStyle: 'color: white;',
           navBgStyle: 'background-color:#000;',
         })
