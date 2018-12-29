@@ -1,11 +1,11 @@
 <!--pages/navigation-bar/navigation-bar.wxml-->
 <view class="{{bgClass}} _nav" style='padding-top:{{barHeight}}px; {{navBgStyle}} {{bgStyle}}'>
-  <view class="nav-back" bindtap="_onTap">
+  <view class="nav-back" bindtap="_onTap" wx:if="{{enable}}">
     <image class="nav-icon" src="{{navIconUrl}}"></image>
   </view>
   <view class='loading'>
     <view wx:if="{{showLoading}}">
-      <image class='loading-icon'></image> 
+      <image class='loading-icon'></image>
     </view>
     <text class="{{titleClass}}" style='{{navTitleStyle}} {{titleStyle}}' >{{title}}</text>
   </view>
