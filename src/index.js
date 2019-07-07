@@ -72,6 +72,7 @@ Component({
       if (this.data.textStyle === 'black') {
         wx.setNavigationBarColor({
           frontColor: '#000000',
+          backgroundColor: this.data.bgStyle,
         })
         this.setData({
           navIconUrl: './images/nav_icon_black.png',
@@ -81,6 +82,7 @@ Component({
       } else {
         wx.setNavigationBarColor({
           frontColor: '#ffffff',
+          backgroundColor: this.data.bgStyle,
         })
         this.setData({
           navIconUrl: './images/nav_icon_white.png',
